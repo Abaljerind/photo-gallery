@@ -29,6 +29,12 @@ body {
   gap: 16px;
 }
 
+/* ini untuk memberikan ruang kosong yang lebarnya sama dengan selector .gallery img dibawah, hanya terjadi ketika kondisi kolomnya 2 dan barisnya 2. */
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
 .gallery img {
   width: 100%;
   max-width: 350px;
